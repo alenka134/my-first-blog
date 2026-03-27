@@ -1,6 +1,27 @@
-venv/
-__pycache__/
+# Python
 *.pyc
-db.sqlite3
+__pycache__/
+*~
+
+# Environment
 .env
-*.log
+venv/
+myvenv/
+
+# Database
+db.sqlite3
+
+# Static files (optional)
+static/
+
+# OS
+.DS_Store
+Thumbs.db
+._*
+.fseventsd
+.Spotlight-V100
+
+# IDE
+.vscode/
+.history/
+*.code-workspace
