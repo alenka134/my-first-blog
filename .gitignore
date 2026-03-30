@@ -12,7 +12,9 @@ myvenv/
 db.sqlite3
 
 # Static files (optional)
-static/
+# Ignore only top-level collected static output, not app static assets.
+/static/
+/staticfiles/
 
 # OS
 .DS_Store

@@ -1,30 +1,26 @@
-"""
-Django settings for mysite project.
-"""
-
 from pathlib import Path
 import os
 from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Load .env file
+# Load environment variables
 load_dotenv(BASE_DIR / '.env')
 
 # SECURITY
 SECRET_KEY = os.getenv('SECRET', 'django-insecure-dev-key')
 
-# DEBUG must be False in production
-DEBUG = False
+# Local dev default is True; set DEBUG=False in production env/.env.
+DEBUG = os.getenv('DEBUG', 'True').strip().lower() in ('1', 'true', 'yes', 'on')
 
-# IMPORTANT: add your PythonAnywhere domain
 ALLOWED_HOSTS = [
-    '127.0.0.1', 'localhost', 
+    '127.0.0.1',
+    'localhost',
     'elenao.pythonanywhere.com',
     'www.elenao.pythonanywhere.com',
 ]
 
-# Application definition
+# Applications
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -32,8 +28,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # Your apps
     'blog',
 ]
 
@@ -52,7 +46,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],  # add templates if needed
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -66,7 +60,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-# Database (SQLite is fine for your project)
+# Database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -88,11 +82,14 @@ TIME_ZONE = 'Europe/Amsterdam'
 USE_I18N = True
 USE_TZ = True
 
-# Static files
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static'
 
-# Security (important for production)
+# For production (e.g. collectstatic). Not used by runserver/staticfiles finders.
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+
+
+# Security
 CSRF_TRUSTED_ORIGINS = [
     'https://elenao.pythonanywhere.com',
 ]
