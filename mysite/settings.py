@@ -19,6 +19,7 @@ DEBUG = False
 
 # IMPORTANT: add your PythonAnywhere domain
 ALLOWED_HOSTS = [
+    '127.0.0.1', 'localhost', 
     'elenao.pythonanywhere.com',
     'www.elenao.pythonanywhere.com',
 ]
