@@ -5,12 +5,18 @@ html, body {
 }
 
 body {
-  padding-left: 15px;
-  background-color: #f6f7fb; /* neutral, soft */
+  background: linear-gradient(to bottom, #f8f9fb, #f1802a);
+}
+
+main .container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .page-header {
-  background-color: #C25100;
+  background-color: #ba6223;
   margin-top: 0;
   padding: 20px 20px 20px 40px;
 }
@@ -67,9 +73,22 @@ h1, h2, h3, h4 {
 }
 
 .post {
-  margin-bottom: 70px;
+  background-color: #f1c691;
+  padding: 25px;
+  margin-bottom: 25px;
+
+  border: 2px solid #a7510b;
+  border-left: 6px solid #a7510b;
+
+  border-radius: 20px;
+
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
+.post p {
+  text-align: justify;
+  color: #3a2a1a;
+}
 .post h2 a,
 .post h2 a:visited {
   color: #000000;
