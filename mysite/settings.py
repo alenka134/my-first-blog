@@ -1,8 +1,13 @@
 from pathlib import Path
+import importlib.util
 import os
 from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# If WhiteNoise is not installed (e.g. missed `pip install`), skip it so the site still loads.
+# Install `whitenoise` from requirements.txt for compressed static files in production.
+_WHITENOISE = importlib.util.find_spec("whitenoise") is not None
 
 # Load environment variables
 load_dotenv(BASE_DIR / '.env')
@@ -33,7 +38,11 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    *(
+        ['whitenoise.middleware.WhiteNoiseMiddleware']
+        if _WHITENOISE
+        else []
+    ),
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -88,15 +97,15 @@ STATIC_URL = '/static/'
 # Collected output for production (`collectstatic`). WhiteNoise serves this when DEBUG=False.
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-STORAGES = {
-    'default': {
-        'BACKEND': 'django.core.files.storage.FileSystemStorage',
-    },
-    'staticfiles': {
-        # Compression without manifest hashing — simpler deploys; run collectstatic after CSS changes.
-        'BACKEND': 'whitenoise.storage.CompressedStaticFilesStorage',
-    },
-}
+if _WHITENOISE:
+    STORAGES = {
+        'default': {
+            'BACKEND': 'django.core.files.storage.FileSystemStorage',
+        },
+        'staticfiles': {
+            'BACKEND': 'whitenoise.storage.CompressedStaticFilesStorage',
+        },
+    }
 
 
 
