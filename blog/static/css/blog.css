@@ -88,3 +88,70 @@ h1, h2, h3, h4 {
     color: #FFFFFF;
     background-color: #C25100;
 }
+
+.site-footer {
+  margin-top: 48px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.site-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+.footer-link,
+.footer-link:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
+svg.footer-icon {
+  fill: currentColor;
+}
+
+img.footer-icon {
+  object-fit: contain;
+}
+
+.footer-link-text {
+  line-height: 1;
+}
+
+.footer-link-linkedin {
+  color: #0A66C2;
+}
+
+.footer-link-shecodes {
+  color: #7C3AED;
+}
+
+.footer-link-djangogirls {
+  color: #C25100;
+}
+
+.site-footer-sep {
+  color: rgba(0, 0, 0, 0.25);
+}
