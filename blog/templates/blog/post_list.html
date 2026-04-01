@@ -17,7 +17,17 @@
 <body>
     <header class="page-header">
         <div class="container">
-            <h1><a href="/">Django Girls Blog</a></h1>
+            <div class="page-header-inner">
+                <div class="page-header-left">
+                    <h1><a href="/">Django Girls Blog</a></h1>
+                </div>
+
+                <div class="page-header-right">
+                    <div class="profile-photo-wrap" aria-hidden="true">
+                        <img class="profile-photo" src="{% static 'img/dolchi.png' %}" alt="My photo">
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
