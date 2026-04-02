@@ -10,7 +10,52 @@
     color: #1a1a1a;
     line-height: 1.6;
 }
+/* =========================
+   EN-NL (modern 3D button with flags)
+========================= */
+.lang-switcher {
+  display: flex;
+  gap: 10px;
+}
 
+/* Base button */
+.lang-btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #f5f5f5;
+  color: #333;
+
+  /* 3D effect */
+  box-shadow: 0 4px 0 #d1d1d1;
+  transition: all 0.1s ease-in-out;
+}
+
+/* Hover effect */
+.lang-btn:hover {
+  background: #eaeaea;
+}
+
+/* Click effect (pressed) */
+.lang-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #d1d1d1;
+}
+
+/* Active language */
+.lang-btn.active {
+  background: #4a90e2;
+  color: white;
+  box-shadow: 0 4px 0 #2f6db0;
+}
+
+/* Active pressed */
+.lang-btn.active:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #2f6db0;
+}
 /* =========================
    LAYOUT
 ========================= */
