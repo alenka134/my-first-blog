@@ -4,36 +4,84 @@ html, body {
   height: 100%;
 }
 
+/* 🌆 Amsterdam background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: url("/static/img/amsterdam.jpg") no-repeat center center;
+  background-size: cover;
+
+  z-index: -2;
+}
+
+/* Overlay for readability */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  z-index: -1;
+}
+
 body {
   background: linear-gradient(to bottom, #f8f9fb, #f3b07a);
 }
 
+/* Main container */
 main .container {
-  background-color: #ffffff;
+  background: transparent;
   padding: 35px;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  margin-top: 30px;
 }
 
+/* Header */
 .page-header {
-  background-color: #ba6223;
-  margin-top: 0;
-  padding: 20px 20px 20px 40px;
+  background: rgba(186, 98, 35, 0.85);
+  backdrop-filter: blur(8px);
+
+  border-radius: 14px;
+  padding: 22px 32px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+
+  margin-bottom: 40px;
 }
 
-.page-header h1,
-.page-header h1 a,
-.page-header h1 a:visited,
-.page-header h1 a:active {
+/* Header title + flag */
+.page-header h1 {
+  margin: 0;
+}
+
+.page-header h1 a {
   color: #ffffff;
-  font-size: 36pt;
+  font-size: 48pt;
   text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
+/* Flag */
+.header-flag {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+}
+
+/* Headings */
 h1, h2, h3, h4 {
   font-family: 'Lobster', cursive;
 }
 
+/* Header layout */
 .page-header-inner {
   display: flex;
   align-items: center;
@@ -42,13 +90,17 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
 }
 
+/* Profile photo */
 .profile-photo-wrap {
   width: 240px;
   height: 240px;
   border-radius: 999px;
+
   background: rgba(255, 255, 255, 0.28);
+
   display: grid;
   place-items: center;
+
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
 }
 
@@ -56,26 +108,27 @@ h1, h2, h3, h4 {
   width: 216px;
   height: 216px;
   object-fit: contain;
+
   padding: 6px;
   box-sizing: border-box;
+
   border-radius: 999px;
+
   background: rgba(255, 255, 255, 0.92);
   border: 2px solid rgba(255, 255, 255, 0.85);
 }
 
-/* Make sure header never visually collides with content */
-.page-header {
-  margin-bottom: 24px;
-}
-
+/* Date */
 .date {
   color: #828282;
 }
 
+/* Blog post */
 .post {
-  background-color: #f1c691;
+  background-color: rgba(241, 198, 145, 0.95);
+
   padding: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   border: 2px solid #a7510b;
   border-left: 6px solid #a7510b;
@@ -84,7 +137,6 @@ h1, h2, h3, h4 {
 
   box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 
-  /* smooth animation */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -116,83 +168,117 @@ h1, h2, h3, h4 {
   color: #777;
   margin-bottom: 5px;
 }
-/* Buttons (optional, future use) */
+
+/* Buttons */
 .btn-secondary,
 .btn-secondary:visited {
-    color: #C25100;
-    background: none;
-    border-color: #C25100;
-    margin-left: 15px;
+  color: #C25100;
+  background: none;
+  border-color: #C25100;
+  margin-left: 15px;
 }
 
 .btn-secondary:hover {
-    color: #FFFFFF;
-    background-color: #C25100;
+  color: #FFFFFF;
+  background-color: #C25100;
 }
 
+/* Footer */
 .site-footer {
   margin-top: 48px;
   padding: 22px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  background: rgba(255, 255, 255, 0.7);
+
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .site-footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
+
   align-items: center;
   justify-content: center;
-  color: #555;
 }
 
+/* 🍎 Apple-style buttons */
 .footer-link,
 .footer-link:visited {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+
   gap: 8px;
+
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+
   text-decoration: none;
-  font-weight: 600;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.65);
+
+  padding: 10px 16px;
+
+  border-radius: 999px; /* pill shape */
+
+  background: rgba(255, 255, 255, 0.7);
+
   border: 1px solid rgba(0, 0, 0, 0.06);
+
+  backdrop-filter: blur(10px);
+
+  color: #333;
+
+  transition: all 0.2s ease;
 }
 
+/* Hover (soft highlight) */
 .footer-link:hover {
-  text-decoration: underline;
+  background: rgba(255, 255, 255, 0.9);
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-1px);
 }
 
+/* Click (subtle press) */
+.footer-link:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Icons */
 .footer-icon {
-  width: 20px;
-  height: 20px;
-  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+
+  display: inline-block;
+  flex-shrink: 0;
 }
 
+/* SVG */
 svg.footer-icon {
   fill: currentColor;
 }
 
+/* PNG fix */
 img.footer-icon {
   object-fit: contain;
+  padding: 1px;
 }
 
+/* Text */
 .footer-link-text {
   line-height: 1;
 }
 
-.footer-link-linkedin {
+/* Subtle brand hint (not too strong, Apple-like) */
+.footer-link-linkedin:hover {
   color: #0A66C2;
 }
 
-.footer-link-shecodes {
+.footer-link-shecodes:hover {
   color: #7C3AED;
 }
 
-.footer-link-djangogirls {
+.footer-link-djangogirls:hover {
   color: #C25100;
-}
-
-.site-footer-sep {
-  color: rgba(0, 0, 0, 0.25);
 }
