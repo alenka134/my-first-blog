@@ -1,0 +1,149 @@
+# Dutch translations for CV
+
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-04-02 23:10+0200\n"
+"PO-Revision-Date: 2026-04-02 23:10+0200\n"
+"Last-Translator: Your Name\n"
+"Language-Team: Dutch\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "QA Automation Engineer"
+msgstr "QA Automation Engineer"
+
+msgid "Web, API, Mobile & Desktop | Test Automation (Selenium, Playwright, Appium) | CI/CD Integration & Quality Engineering"
+msgstr "Web, API, Mobile & Desktop | Testautomatisering (Selenium, Playwright, Appium) | CI/CD-integratie & Quality Engineering"
+
+msgid "Skills"
+msgstr "Vaardigheden"
+
+msgid "Test Automation & Frameworks:"
+msgstr "Testautomatisering & Frameworks:"
+
+msgid "Programming & Scripting:"
+msgstr "Programmeren & Scripting:"
+
+msgid "API & Backend Testing:"
+msgstr "API & Backend Testing:"
+
+msgid "CI/CD & Version Control:"
+msgstr "CI/CD & Versiebeheer:"
+
+msgid "Testing & QA:"
+msgstr "Testen & QA:"
+
+msgid "Web & Desktop:"
+msgstr "Web & Desktop:"
+
+msgid "Tools & Technologies:"
+msgstr "Tools & Technologieën:"
+
+msgid "Languages:"
+msgstr "Talen:"
+
+msgid "Profile"
+msgstr "Profiel"
+
+msgid "Senior QA Automation Engineer with 7+ years of experience designing and implementing automated testing solutions for web, API, mobile, and desktop applications across SaaS, public sector, healthcare, and industrial domains."
+msgstr "Senior QA Automation Engineer met meer dan 7 jaar ervaring in het ontwerpen en implementeren van testautomatiseringsoplossingen voor web-, API-, mobiele en desktopapplicaties binnen SaaS, publieke sector, gezondheidszorg en industriële domeinen."
+
+msgid "Skilled in designing and building test automation frameworks and integrating them into CI/CD pipelines using C#, Java, and JavaScript, with hands-on experience in Selenium, Playwright, Appium, and WinAppDriver."
+msgstr "Ervaren in het ontwerpen en bouwen van testautomatiseringsframeworks en het integreren ervan in CI/CD pipelines met C#, Java en JavaScript, met praktische ervaring in Selenium, Playwright, Appium en WinAppDriver."
+
+msgid "Experienced in CI/CD integration with Azure DevOps and Jenkins, improving test coverage, reducing execution time, and increasing release reliability. Strong background in API testing, microservices validation, and SQL-based verification."
+msgstr "Ervaren in CI/CD-integratie met Azure DevOps en Jenkins, waarbij testdekking is verbeterd, uitvoeringstijd is verkort en de betrouwbaarheid van releases is verhoogd. Sterke achtergrond in API testing, microservices validatie en SQL-gebaseerde verificatie."
+
+msgid "Focused on improving software quality, test processes, and automation strategy within Agile environments, delivering stable and maintainable solutions."
+msgstr "Gefocust op het verbeteren van softwarekwaliteit, testprocessen en automatiseringsstrategie binnen Agile omgevingen, met stabiele en onderhoudbare oplossingen."
+
+msgid "Experience"
+msgstr "Ervaring"
+
+msgid "Freelancer – Educational Tools Creator"
+msgstr "Freelancer – Ontwikkelaar van educatieve tools"
+
+msgid "Expat Language Labs, Netherlands — 2024–Present"
+msgstr "Expat Language Labs, Nederland — 2024–heden"
+
+msgid "Designed and developed a web-based educational game using JavaScript"
+msgstr "Ontworpen en ontwikkeld: een webgebaseerd educatief spel met JavaScript"
+
+msgid "Designed and implemented a Playwright-based end-to-end test automation framework"
+msgstr "Ontworpen en geïmplementeerd: Playwright-gebaseerd end-to-end testautomatiseringsframework"
+
+msgid "Improved test coverage and reduced manual testing effort through automation"
+msgstr "Testdekking verbeterd en handmatig testen verminderd door automatisering"
+
+msgid "Collaborated with stakeholders to improve product quality and usability"
+msgstr "Samengewerkt met stakeholders om productkwaliteit en gebruiksvriendelijkheid te verbeteren"
+
+msgid "Designed, developed, and deployed a live web application:"
+msgstr "Ontworpen, ontwikkeld en uitgerold: een live webapplicatie:"
+
+msgid "Project Demo"
+msgstr "Project demo"
+
+msgid "QA Automation Developer & Team Lead"
+msgstr "QA Automation Developer & Teamleider"
+
+msgid "MES LTD, Israel — 2023–2024"
+msgstr "MES LTD, Israël — 2023–2024"
+
+msgid "Increased test coverage by 62%% and reduced test execution time by 30%%"
+msgstr "Testdekking verhoogd met 62%% en testuitvoeringstijd verminderd met 30%%"
+
+msgid "Led CI/CD integration using Azure DevOps"
+msgstr "CI/CD-integratie geleid met Azure DevOps"
+
+msgid "Defined and improved QA processes and internal documentation"
+msgstr "QA-processen en interne documentatie gedefinieerd en verbeterd"
+
+msgid "Coordinated automation efforts and supported team members"
+msgstr "Automatiseringsinspanningen gecoördineerd en teamleden ondersteund"
+
+msgid "MES LTD, Israel — 2021–2023"
+msgstr "MES LTD, Israël — 2021–2023"
+
+msgid "Built and maintained automation frameworks using C# and Java"
+msgstr "Automatiseringsframeworks gebouwd en onderhouden met C# en Java"
+
+msgid "Automated regression testing and improved release cycles"
+msgstr "Regressietesten geautomatiseerd en releasecycli verbeterd"
+
+msgid "Performed API testing and SQL-based validation"
+msgstr "API testing en SQL-gebaseerde validatie uitgevoerd"
+
+msgid "QA Engineer – Manual & Automation"
+msgstr "QA Engineer – Handmatig & Automatisering"
+
+msgid "MES LTD, Israel — 2017–2021"
+msgstr "MES LTD, Israël — 2017–2021"
+
+msgid "Performed manual and automated testing for desktop and web applications"
+msgstr "Handmatig en geautomatiseerd testen uitgevoerd voor desktop- en webapplicaties"
+
+msgid "Achieved 98%% defect detection rate in critical medical applications"
+msgstr "98%% defectdetectie behaald in kritische medische applicaties"
+
+msgid "Reduced regression testing time by 50%%"
+msgstr "Regressietesttijd met 50%% verminderd"
+
+msgid "Research Associate & Lab Manager"
+msgstr "Onderzoeker & Lab Manager"
+
+msgid "Technion – Israel Institute of Technology — 2010–2017"
+msgstr "Technion – Israel Institute of Technology — 2010–2017"
+
+msgid "Designed experimental protocols and validated scientific results"
+msgstr "Experimentele protocollen ontworpen en wetenschappelijke resultaten gevalideerd"
+
+msgid "Managed laboratory operations and research processes"
+msgstr "Laboratoriumactiviteiten en onderzoeksprocessen beheerd"
+
+msgid "Education & Certifications"
+msgstr "Opleiding & Certificeringen"

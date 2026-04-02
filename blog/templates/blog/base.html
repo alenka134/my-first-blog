@@ -1,0 +1,56 @@
+{% load static i18n %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %}My Site{% endblock %}</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cv.css' %}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+
+    <!-- Language switch -->
+    <form action="{% url 'set_language' %}" method="post" class="lang-switch">
+        {% csrf_token %}
+        <input name="next" type="hidden" value="{{ request.path }}">
+
+        <button type="submit" name="language" value="en"
+                class="{% if LANGUAGE_CODE == 'en' %}active{% endif %}">
+            EN
+        </button>
+
+        |
+
+        <button type="submit" name="language" value="nl"
+                class="{% if LANGUAGE_CODE == 'nl' %}active{% endif %}">
+            NL
+        </button>
+    </form>
+
+    {% block header %}
+    <!-- Navigation -->
+    {% endblock %}
+
+</header>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer>
+    {% block footer %}
+    {% endblock %}
+</footer>
+
+</body>
+</html>

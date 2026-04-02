@@ -1,0 +1,183 @@
+{% extends "blog/base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="cv-page">
+
+    <!-- HEADER -->
+    <div class="cv-header">
+        <h1>Elena Ovcharenko</h1>
+
+        <p class="cv-contact">
+            📍 Amstelveen, North Holland |
+            📧 <a href="mailto:alenka134@gmail.com">alenka134@gmail.com</a> |
+            📞 <a href="tel:+31685574308">+31 685574308</a> |
+            🔗 <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/alenka134" target="_blank">GitHub</a> |
+            <a href="https://elenao.pythonanywhere.com/" target="_blank">Live Project</a>
+        </p>
+
+        <h2 class="cv-title">
+            {% trans "QA Automation Engineer" %}
+        </h2>
+
+        <p class="cv-subtitle">
+            {% trans "Web, API, Mobile & Desktop | Test Automation (Selenium, Playwright, Appium) | CI/CD Integration & Quality Engineering" %}
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- TWO COLUMN LAYOUT -->
+    <div class="cv-container">
+
+        <!-- LEFT COLUMN -->
+        <aside class="cv-left">
+            <h2>{% trans "Skills" %}</h2>
+
+            <p><strong>{% trans "Test Automation & Frameworks:" %}</strong>
+                Selenium, Playwright, Appium, WinAppDriver, NUnit, TestNG, SpecFlow (BDD)
+            </p>
+
+            <p><strong>{% trans "Programming & Scripting:" %}</strong>
+                C#, Java, JavaScript/TypeScript, Python (basic), SQL
+            </p>
+
+            <p><strong>{% trans "API & Backend Testing:" %}</strong>
+                REST API testing (Postman, REST Assured), microservices validation, API verification
+            </p>
+
+            <p><strong>{% trans "CI/CD & Version Control:" %}</strong>
+                Azure DevOps, Jenkins, GitHub Actions, GitLab CI, Git
+            </p>
+
+            <p><strong>{% trans "Testing & QA:" %}</strong>
+                Functional, Regression, Smoke, Integration, End-to-End, Risk-based testing, Test strategy
+            </p>
+
+            <p><strong>{% trans "Web & Desktop:" %}</strong>
+                Web applications, Desktop applications, SaaS platforms
+            </p>
+
+            <p><strong>{% trans "Tools & Technologies:" %}</strong>
+                SSMS, Maven, NuGet, Docker (basic), Kubernetes (basic)
+            </p>
+
+            <p><strong>{% trans "Languages:" %}</strong>
+                Dutch (B1), English (fluent), Russian (native), Hebrew (fluent)
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/alenka134" target="_blank">github.com/alenka134</a>
+            </p>
+        </aside>
+
+        <!-- RIGHT COLUMN -->
+        <main class="cv-right">
+
+            <!-- PROFILE -->
+            <section>
+                <h2>{% trans "Profile" %}</h2>
+
+                <p>
+                    {% trans "Senior QA Automation Engineer with 7+ years of experience designing and implementing automated testing solutions for web, API, mobile, and desktop applications across SaaS, public sector, healthcare, and industrial domains." %}
+                </p>
+
+                <p>
+                    {% trans "Skilled in designing and building test automation frameworks and integrating them into CI/CD pipelines using C#, Java, and JavaScript, with hands-on experience in Selenium, Playwright, Appium, and WinAppDriver." %}
+                </p>
+
+                <p>
+                    {% trans "Experienced in CI/CD integration with Azure DevOps and Jenkins, improving test coverage, reducing execution time, and increasing release reliability. Strong background in API testing, microservices validation, and SQL-based verification." %}
+                </p>
+
+                <p>
+                    {% trans "Focused on improving software quality, test processes, and automation strategy within Agile environments, delivering stable and maintainable solutions." %}
+                </p>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section>
+                <h2>{% trans "Experience" %}</h2>
+
+                <div class="cv-job">
+                    <h3>{% trans "Freelancer – Educational Tools Creator" %}</h3>
+                    <p><strong>{% trans "Expat Language Labs, Netherlands — 2024–Present" %}</strong></p>
+                    <ul>
+                        <li>{% trans "Designed and developed a web-based educational game using JavaScript" %}</li>
+                        <li>{% trans "Designed and implemented a Playwright-based end-to-end test automation framework" %}</li>
+                        <li>{% trans "Improved test coverage and reduced manual testing effort through automation" %}</li>
+                        <li>{% trans "Collaborated with stakeholders to improve product quality and usability" %}</li>
+                        <li>
+                            {% trans "Designed, developed, and deployed a live web application:" %}
+                            <a href="https://elenao.pythonanywhere.com/" target="_blank">
+                                {% trans "Project Demo" %}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="cv-job">
+                    <h3>{% trans "QA Automation Developer & Team Lead" %}</h3>
+                    <p><strong>{% trans "MES LTD, Israel — 2023–2024" %}</strong></p>
+                    <ul>
+                        <li>{% trans "Increased test coverage by 62% and reduced test execution time by 30%" %}</li>
+                        <li>{% trans "Led CI/CD integration using Azure DevOps" %}</li>
+                        <li>{% trans "Defined and improved QA processes and internal documentation" %}</li>
+                        <li>{% trans "Coordinated automation efforts and supported team members" %}</li>
+                    </ul>
+                </div>
+
+                <div class="cv-job">
+                    <h3>{% trans "QA Automation Engineer" %}</h3>
+                    <p><strong>{% trans "MES LTD, Israel — 2021–2023" %}</strong></p>
+                    <ul>
+                        <li>{% trans "Built and maintained automation frameworks using C# and Java" %}</li>
+                        <li>{% trans "Automated regression testing and improved release cycles" %}</li>
+                        <li>{% trans "Performed API testing and SQL-based validation" %}</li>
+                    </ul>
+                </div>
+
+                <div class="cv-job">
+                    <h3>{% trans "QA Engineer – Manual & Automation" %}</h3>
+                    <p><strong>{% trans "MES LTD, Israel — 2017–2021" %}</strong></p>
+                    <ul>
+                        <li>{% trans "Performed manual and automated testing for desktop and web applications" %}</li>
+                        <li>{% trans "Achieved 98% defect detection rate in critical medical applications" %}</li>
+                        <li>{% trans "Reduced regression testing time by 50%" %}</li>
+                    </ul>
+                </div>
+
+                <div class="cv-job">
+                    <h3>{% trans "Research Associate & Lab Manager" %}</h3>
+                    <p><strong>{% trans "Technion – Israel Institute of Technology — 2010–2017" %}</strong></p>
+                    <ul>
+                        <li>{% trans "Designed experimental protocols and validated scientific results" %}</li>
+                        <li>{% trans "Managed laboratory operations and research processes" %}</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- EDUCATION -->
+            <section>
+                <h2>{% trans "Education & Certifications" %}</h2>
+
+                <ul>
+                    <li>M.Sc. Biology & Medical Science – Technion</li>
+                    <li>Certification in Automation – Computer College</li>
+                    <li>Managing App Development – Quantic (2025)</li>
+                    <li>Playwright Automation (2024)</li>
+                    <li>Appium & WinAppDriver (2022)</li>
+                </ul>
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+{% endblock %}
