@@ -1,132 +1,228 @@
-/* Basic styling (Django Girls style) */
+/* =========================
+   BASE
+========================= */
 
-html, body {
+html,
+body {
   height: 100%;
+  margin: 0;
 }
 
-/* 🌆 Amsterdam background */
+/* Background image */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-
   background: url("/static/img/amsterdam.jpg") no-repeat center center;
   background-size: cover;
-
   z-index: -2;
 }
 
-/* Overlay for readability */
+/* Overlay */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
-
   background: rgba(255, 255, 255, 0.75);
-
   z-index: -1;
 }
 
 body {
   background: linear-gradient(to bottom, #f8f9fb, #f3b07a);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-/* Main container */
+/* =========================
+   LAYOUT
+========================= */
+
 main .container {
   background: transparent;
   padding: 35px;
-
   margin-top: 30px;
 }
 
-/* Header */
+/* =========================
+   HEADER
+========================= */
+
 .page-header {
   background: rgba(186, 98, 35, 0.85);
   backdrop-filter: blur(8px);
-
-  border-radius: 14px;
-  padding: 22px 32px;
-
+  border-radius: 34px;
+  padding: 12px 52px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-/* Header title + flag */
+.page-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* LEFT SIDE */
+.page-header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* TITLE */
 .page-header h1 {
   margin: 0;
 }
 
 .page-header h1 a {
   color: #ffffff;
-  font-size: 48pt;
+  font-size: 52px;
   text-decoration: none;
-
   display: inline-flex;
   align-items: center;
   gap: 10px;
-
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* Flag */
+/* FLAG */
 .header-flag {
   width: 28px;
   height: 28px;
   border-radius: 4px;
 }
 
-/* Headings */
-h1, h2, h3, h4 {
-  font-family: 'Lobster', cursive;
-}
-
-/* Header layout */
-.page-header-inner {
+/* RIGHT SIDE */
+.page-header-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
+  gap: 15px;
 }
 
-/* Profile photo */
+/* PROFILE */
 .profile-photo-wrap {
-  width: 240px;
-  height: 240px;
-  border-radius: 999px;
-
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
   background: rgba(255, 255, 255, 0.28);
-
   display: grid;
   place-items: center;
-
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
 }
 
 .profile-photo {
-  width: 216px;
-  height: 216px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
-
   padding: 6px;
-  box-sizing: border-box;
-
-  border-radius: 999px;
-
+  border-radius: 50%;
   background: rgba(255, 255, 255, 0.92);
   border: 2px solid rgba(255, 255, 255, 0.85);
 }
 
-/* Date */
-.date {
-  color: #828282;
+/* =========================
+   CV BUTTONS (GLOBAL)
+========================= */
+
+.cv-buttons {
+  display: flex;
+  gap: 10px;
 }
 
-/* Blog post */
+.btn-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.btn-icon-img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* PRIMARY (View CV) */
+/* =========================
+   CV BUTTONS (MATCH FOOTER STYLE)
+========================= */
+
+.cv-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Base style (same as footer) */
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 16px;
+  border-radius: 999px;
+
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 20px; /* bigger padding = better balance */
+  /* ✅ bold */
+
+  text-decoration: none;
+
+  color: #5a3a1a;
+  /* ✅ brown color */
+
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  /* ✅ 3D text effect */
+  text-shadow:
+    1px 1px 0 #a84e09,
+    2px 2px 2px rgba(0, 0, 0, 0.15);
+
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.cv-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+/* Click */
+.cv-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Optional subtle difference */
+.cv-btn.secondary {
+  opacity: 0.85;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Lobster', cursive;
+}
+
+/* =========================
+   POSTS
+========================= */
+
 .post {
   background-color: rgba(241, 198, 145, 0.95);
-
   padding: 25px;
   margin-bottom: 30px;
 
@@ -135,14 +231,13 @@ h1, h2, h3, h4 {
 
   border-radius: 20px;
 
-  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .post:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
 .post p {
@@ -153,9 +248,8 @@ h1, h2, h3, h4 {
 }
 
 .post h2 a {
-  color: #000000;
+  color: #000;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .post h2 a:hover {
@@ -169,25 +263,17 @@ h1, h2, h3, h4 {
   margin-bottom: 5px;
 }
 
-/* Buttons */
-.btn-secondary,
-.btn-secondary:visited {
-  color: #C25100;
-  background: none;
-  border-color: #C25100;
-  margin-left: 15px;
+.date {
+  color: #828282;
 }
 
-.btn-secondary:hover {
-  color: #FFFFFF;
-  background-color: #C25100;
-}
+/* =========================
+   FOOTER
+========================= */
 
-/* Footer */
 .site-footer {
   margin-top: 48px;
   padding: 22px 0;
-
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
@@ -195,82 +281,58 @@ h1, h2, h3, h4 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-/* 🍎 Apple-style buttons */
-.footer-link,
-.footer-link:visited {
+/* LINKS */
+.footer-link {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-
   gap: 8px;
 
-  font-size: 14px;
-  line-height: 1;
-  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 999px;
 
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
 
-  padding: 10px 16px;
-
-  border-radius: 999px; /* pill shape */
-
+  color: #333;
   background: rgba(255, 255, 255, 0.7);
-
   border: 1px solid rgba(0, 0, 0, 0.06);
 
   backdrop-filter: blur(10px);
-
-  color: #333;
-
   transition: all 0.2s ease;
 }
 
-/* Hover (soft highlight) */
 .footer-link:hover {
   background: rgba(255, 255, 255, 0.9);
-
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
   transform: translateY(-1px);
 }
 
-/* Click (subtle press) */
 .footer-link:active {
   transform: translateY(0);
   box-shadow: none;
 }
 
-/* Icons */
+/* ICONS */
 .footer-icon {
   width: 18px;
   height: 18px;
-
-  display: inline-block;
-  flex-shrink: 0;
 }
 
-/* SVG */
 svg.footer-icon {
   fill: currentColor;
 }
 
-/* PNG fix */
 img.footer-icon {
   object-fit: contain;
   padding: 1px;
 }
 
-/* Text */
-.footer-link-text {
-  line-height: 1;
-}
-
-/* Subtle brand hint (not too strong, Apple-like) */
+/* BRAND COLORS (SUBTLE) */
 .footer-link-linkedin:hover {
   color: #0A66C2;
 }
