@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'cv',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 # Messages
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
+# settings.py
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
