@@ -21,6 +21,12 @@
     "SSMS",
     "NuGet",
     "SaaS",
+    "venv",
+    "createsuperuser",
+    "runserver",
+    "mysite",
+    "staticfiles",
+    "elenav",
     "alenka134",
     "pythonanywhere"
   ]

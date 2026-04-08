@@ -15,6 +15,7 @@ A Django-based personal website featuring a blog with rich media support and a p
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Python 3.8+
 - pip (Python package manager)
 - Git
@@ -22,45 +23,52 @@ A Django-based personal website featuring a blog with rich media support and a p
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/alenka134/my-first-blog.git
    cd my-first-blog
    ```
 
 2. **Create a virtual environment**
+
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
 3. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 4. **Set up the database**
+
    ```bash
    python manage.py migrate
    ```
 
 5. **Create a superuser (admin account)**
+
    ```bash
    python manage.py createsuperuser
    ```
 
 6. **Run the development server**
+
    ```bash
    python manage.py runserver
    ```
 
 7. **Open your browser**
-   - Blog: http://127.0.0.1:8000/
-   - Admin panel: http://127.0.0.1:8000/admin/
-   - CV: http://127.0.0.1:8000/cv/
+
+   - [Blog](http://127.0.0.1:8000/)
+   - [Admin panel](http://127.0.0.1:8000/admin/)
+   - [CV](http://127.0.0.1:8000/cv/)
 
 ## 📁 Project Structure
 
-```
+```text
 my-first-blog/
 ├── blog/                    # Blog app
 │   ├── migrations/         # Database migrations
@@ -81,18 +89,21 @@ my-first-blog/
 ## 🎨 Features in Detail
 
 ### Blog Posts
+
 - Create rich blog posts with text content
 - Upload videos that play inline
 - Add screenshots/images alongside videos
 - Responsive design that works on all devices
 
 ### CV Section
+
 - Professional resume layout
 - Skills, experience, and education sections
 - Contact information and social links
 - PDF download option
 
 ### Media Management
+
 - Videos are stored in `media/videos/`
 - Images are stored in `media/images/`
 - Automatic thumbnail generation for images
@@ -110,6 +121,7 @@ my-first-blog/
 ## 📝 Usage
 
 ### Adding Blog Posts
+
 1. Log into the admin panel (`/admin/`)
 2. Navigate to "Blog > Posts"
 3. Click "Add Post"
@@ -118,7 +130,9 @@ my-first-blog/
 6. Set publish date to make it live
 
 ### Managing CV Content
+
 The CV content is currently static but can be made dynamic by:
+
 - Adding models for experience, skills, etc.
 - Creating admin interfaces for content management
 - Implementing dynamic sections
@@ -126,16 +140,19 @@ The CV content is currently static but can be made dynamic by:
 ## 🌐 Deployment
 
 ### PythonAnywhere
+
 1. Create a PythonAnywhere account
 2. Upload your code
-3. Set up virtual environment
+3. Set up a virtual environment
 4. Configure static/media files
-5. Set up database
-6. Configure web app
+5. Set up the database
+6. Configure the web app
 
 ### Environment Variables
+
 Create a `.env` file for sensitive settings:
-```
+
+```env
 SECRET_KEY=your-secret-key-here
 DEBUG=False
 DATABASE_URL=your-database-url
@@ -155,10 +172,11 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-**Elena Ovcharenko**
+Elena Ovcharenko
+
 - LinkedIn: [Elena Ovcharenko](https://www.linkedin.com/in/elena-ovcharenko-0650b615/)
 - GitHub: [@alenka134](https://github.com/alenka134)
-- Website: [elenav.pythonanywhere.com](https://elenao.pythonanywhere.com/)
+- Website: [elenao.pythonanywhere.com](https://elenao.pythonanywhere.com/)
 
 ## 🙏 Acknowledgments
 
