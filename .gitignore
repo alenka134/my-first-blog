@@ -16,6 +16,9 @@ db.sqlite3
 /static/
 /staticfiles/
 
+# Media files (user uploads)
+/media/
+
 # OS
 .DS_Store
 Thumbs.db

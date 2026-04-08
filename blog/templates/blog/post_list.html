@@ -82,6 +82,34 @@
 
                     <p>{{ post.text|linebreaksbr }}</p>
 
+                    {% if post.video or post.image %}
+                    <div class="post-media" style="display: flex; gap: 20px; align-items: flex-start; margin: 20px 0; flex-wrap: wrap;">
+                        {% if post.video %}
+                        <div class="post-video">
+                            <video controls style="max-width: 100%; height: auto; max-height: 400px;">
+                                <source src="{{ post.video.url }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        {% endif %}
+                        
+                        {% if post.image %}
+                        <div class="post-image">
+                            <img src="{{ post.image.url }}" alt="{{ post.title }} image" style="max-width: 100%; height: auto; max-height: 400px;">
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                    
+                    {% if post.video2 %}
+                    <div class="post-video2" style="margin: 20px 0;">
+                        <video controls style="max-width: 100%; height: auto; max-height: 400px;">
+                            <source src="{{ post.video2.url }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    {% endif %}
+
                 </article>
                 {% endfor %}
             </div>
