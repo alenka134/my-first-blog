@@ -244,8 +244,15 @@ details.post[open] {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-6px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =========================
@@ -256,15 +263,18 @@ details.post[open] {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-  align-items: flex-start; /* important */
+  align-items: flex-start;
+  /* important */
   margin-top: 15px;
 }
 
 /* VIDEO - show FULL content */
 .post-media video {
   width: 320px;
-  height: auto;          /* keep real ratio */
-  max-height: 220px;     /* limit size */
+  height: auto;
+  /* keep real ratio */
+  max-height: 220px;
+  /* limit size */
   border-radius: 12px;
 }
 
@@ -272,8 +282,75 @@ details.post[open] {
 .post-media img {
   width: 320px;
   height: 220px;
-  object-fit: cover;     /* image can be cropped */
+  object-fit: cover;
+  /* image can be cropped */
   border-radius: 12px;
+}
+
+/* =========================
+   TOGGLE BUTTON (MODERN)
+========================= */
+
+.post-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* button */
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #07304a;
+
+  background: linear-gradient(145deg, #e6f4fb, #cde7f6);
+
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.08),
+    0 6px 14px rgba(0, 0, 0, 0.12);
+
+  transition: all 0.25s ease;
+}
+
+.toggle-btn:hover {
+  transform: translateY(-1px);
+}
+
+.toggle-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* chevron icon */
+.chevron {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  transition: transform 0.3s ease;
+}
+
+/* rotate when open */
+.toggle-btn.open .chevron {
+  transform: rotate(180deg);
+}
+
+/* optional: change label color in open state */
+.toggle-btn.open {
+  background: linear-gradient(145deg, #ffe6e6, #ffd1d1);
+  color: #7a1c1c;
 }
 
 /* =========================

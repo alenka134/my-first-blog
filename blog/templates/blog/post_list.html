@@ -84,10 +84,13 @@
                         <div class="post-title-row">
                             <h2>{{ post.title }}</h2>
 
-                            <!-- NEW BUTTON -->
-                            <button type="button" class="toggle-btn"
-                                onclick="event.preventDefault(); this.closest('details').open = !this.closest('details').open;">
-                                Open / Close
+                            <button type="button" class="toggle-btn" onclick="event.preventDefault(); togglePost(this)">
+
+                                <svg class="chevron" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                                <span class="label">Open</span>
+
                             </button>
                         </div>
 
@@ -166,7 +169,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        function togglePost(btn) {
+            const details = btn.closest('details');
+            const label = btn.querySelector('.label');
 
+            details.open = !details.open;
+
+            if (details.open) {
+                label.textContent = "Close";
+                btn.classList.add("open");
+            } else {
+                label.textContent = "Open";
+                btn.classList.remove("open");
+            }
+        }
+    </script>
 </body>
 
 </html>
