@@ -277,7 +277,7 @@ details.post[open] {
 }
 
 /* =========================
-   FOOTER
+   FOOTER (FINAL)
 ========================= */
 
 .site-footer {
@@ -291,8 +291,10 @@ details.post[open] {
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
+  align-items: center;
 }
 
+/* LINKS */
 .footer-link {
   display: inline-flex;
   align-items: center;
@@ -302,20 +304,55 @@ details.post[open] {
   border-radius: 999px;
 
   font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
 
   color: #333;
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(0, 0, 0, 0.06);
 
-  transition: 0.2s;
+  backdrop-filter: blur(10px);
+
+  transition: all 0.2s ease;
 }
 
+/* hover */
 .footer-link:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transform: translateY(-1px);
 }
 
+/* click */
+.footer-link:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* ICONS */
 .footer-icon {
   width: 18px;
   height: 18px;
+}
+
+svg.footer-icon {
+  fill: currentColor;
+}
+
+img.footer-icon {
+  object-fit: contain;
+  padding: 1px;
+}
+
+/* BRAND COLORS */
+.footer-link-linkedin:hover {
+  color: #0A66C2;
+}
+
+.footer-link-shecodes:hover {
+  color: #7C3AED;
+}
+
+.footer-link-djangogirls:hover {
+  color: #C25100;
 }
