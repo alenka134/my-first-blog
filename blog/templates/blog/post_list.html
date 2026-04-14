@@ -109,7 +109,18 @@
                             {% endif %}
 
                             {% if post.image %}
-                            <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                            <div class="post-image-block">
+                                <div class="post-image-thumb-wrap">
+                                    <button type="button" class="post-image-preview-open" data-image-preview="{{ post.image.url }}" title="Click for full preview">
+                                        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                                    </button>
+                                    <a class="post-image-newtab-icon" href="{{ post.image.url }}" target="_blank" rel="noopener noreferrer" aria-label="Open image in new tab" title="Open in new tab">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                                            <path fill="currentColor" d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59L7.76 14.83l1.41 1.41L19 6.41V10h2V3h-7z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                             {% endif %}
                         </div>
                         {% endif %}
@@ -169,6 +180,15 @@
             </div>
         </div>
     </footer>
+
+    <dialog id="imagePreviewDialog" class="image-preview-dialog">
+        <div class="image-preview-dialog-panel">
+            <button type="button" class="image-preview-close" aria-label="Close preview">&times;</button>
+            <img class="image-preview-full" src="" alt="">
+            <p class="image-preview-hint">Esc or × to close · Click outside the picture</p>
+        </div>
+    </dialog>
+
     <script>
         function togglePost(btn) {
             const details = btn.closest('details');
@@ -184,6 +204,45 @@
                 btn.classList.remove("open");
             }
         }
+
+        (function initImagePreviewDialog() {
+            const dialog = document.getElementById('imagePreviewDialog');
+            const fullImg = dialog ? dialog.querySelector('.image-preview-full') : null;
+            const closeBtn = dialog ? dialog.querySelector('.image-preview-close') : null;
+            if (!dialog || !fullImg) return;
+
+            function openPreview(url, altText) {
+                fullImg.src = url;
+                fullImg.alt = altText || '';
+                if (typeof dialog.showModal === 'function') {
+                    dialog.showModal();
+                } else {
+                    window.open(url, '_blank', 'noopener,noreferrer');
+                }
+            }
+
+            document.querySelectorAll('[data-image-preview]').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    const url = btn.getAttribute('data-image-preview');
+                    const thumb = btn.querySelector('img');
+                    openPreview(url, thumb ? thumb.alt : '');
+                });
+            });
+
+            closeBtn?.addEventListener('click', function () {
+                dialog.close();
+            });
+
+            dialog.addEventListener('click', function (e) {
+                if (e.target === dialog) {
+                    dialog.close();
+                }
+            });
+
+            dialog.addEventListener('close', function () {
+                fullImg.removeAttribute('src');
+            });
+        })();
     </script>
 </body>
 
