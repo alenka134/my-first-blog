@@ -551,3 +551,97 @@ img.footer-icon {
 .footer-link-djangogirls:hover {
   color: #C25100;
 }
+
+/* =========================
+   PAGINATION (blog index)
+   Same blue as .page-header (rgb 130, 162, 191) — overrides Bootstrap defaults
+========================= */
+
+.blog-pagination {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(130, 162, 191, 0.35);
+
+  /* Match .page-header background family; drives Bootstrap .page-link states */
+  --bs-pagination-color: #3d5a73;
+  --bs-pagination-bg: rgba(255, 255, 255, 0.85);
+  --bs-pagination-border-color: rgba(130, 162, 191, 0.45);
+  --bs-pagination-hover-color: #07304a;
+  --bs-pagination-hover-bg: rgba(255, 255, 255, 1);
+  --bs-pagination-hover-border-color: rgba(130, 162, 191, 0.75);
+  --bs-pagination-focus-color: #07304a;
+  --bs-pagination-focus-bg: rgba(255, 255, 255, 1);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.2rem rgba(130, 162, 191, 0.3);
+  /* Same fill as .page-header */
+  --bs-pagination-active-color: #fff;
+  --bs-pagination-active-bg: rgba(130, 162, 191, 0.85);
+  --bs-pagination-active-border-color: rgba(130, 162, 191, 0.85);
+  --bs-pagination-disabled-color: #6c8aa3;
+  --bs-pagination-disabled-bg: rgba(255, 255, 255, 0.55);
+  --bs-pagination-disabled-border-color: rgba(130, 162, 191, 0.3);
+}
+
+.blog-pagination-list .page-item {
+  margin: 0;
+}
+
+/* Page numbers only (not ‹ › or …): header blue + bold */
+.blog-pagination .page-item:not(.active) a.page-link.blog-page-link:not(.blog-page-edge):not(.blog-page-ellipsis) {
+  font-weight: 700;
+  color: rgb(130, 162, 191);
+}
+
+.blog-pagination .page-item:not(.active) a.page-link.blog-page-link:not(.blog-page-edge):not(.blog-page-ellipsis):hover {
+  color: rgb(95, 125, 158);
+}
+
+/* Current page — same fill as .page-header, white bold label */
+.blog-pagination .page-item.active > .page-link.blog-page-link:not(.blog-page-edge) {
+  font-weight: 700;
+  color: #fff;
+  background-color: rgba(130, 162, 191, 0.85);
+  border-color: rgba(130, 162, 191, 0.85);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Prev / next ‹ › — same blue as .page-header, bold */
+.blog-pagination .page-link.blog-page-link.blog-page-edge {
+  font-weight: 700;
+  color: rgb(130, 162, 191);
+}
+
+.blog-pagination a.page-link.blog-page-link.blog-page-edge:hover,
+.blog-pagination a.page-link.blog-page-link.blog-page-edge:focus {
+  color: rgb(95, 125, 158);
+}
+
+.blog-page-link {
+  border-radius: 999px !important;
+  min-width: 2.5rem;
+  text-align: center;
+  padding: 0.4rem 0.75rem;
+  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.blog-pagination a.page-link.blog-page-link:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.blog-page-edge {
+  font-size: 1.15rem;
+  line-height: 1;
+  padding-left: 0.85rem;
+  padding-right: 0.85rem;
+}
+
+.blog-page-ellipsis {
+  border: none;
+  background: transparent;
+  color: #6c8aa3;
+}
+
+.blog-pagination-list .page-item.disabled .blog-page-link {
+  opacity: 0.45;
+  pointer-events: none;
+}

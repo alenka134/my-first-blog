@@ -71,7 +71,7 @@
         <div class="row">
             <div class="col">
 
-                {% for post in posts %}
+                {% for post in page_obj %}
                 <details class="post">
 
                     <summary class="post-summary">
@@ -100,11 +100,17 @@
 
                         <p>{{ post.text|linebreaksbr }}</p>
 
-                        {% if post.video or post.gallery_images %}
+                        {% if post.video or post.gallery_images or post.video2 %}
                         <div class="post-media">
                             {% if post.video %}
                             <video controls>
                                 <source src="{{ post.video.url }}" type="video/mp4">
+                            </video>
+                            {% endif %}
+
+                            {% if post.video2 %}
+                            <video controls>
+                                <source src="{{ post.video2.url }}" type="video/mp4">
                             </video>
                             {% endif %}
 
@@ -125,18 +131,58 @@
                         </div>
                         {% endif %}
 
-                        {% if post.video2 %}
-                        <div class="post-video2">
-                            <video controls>
-                                <source src="{{ post.video2.url }}" type="video/mp4">
-                            </video>
-                        </div>
-                        {% endif %}
-
                     </div>
 
                 </details>
                 {% endfor %}
+
+                {% if page_obj.paginator.num_pages > 1 %}
+                <nav class="blog-pagination" aria-label="Blog posts pages">
+                    <ul class="pagination blog-pagination-list justify-content-center flex-wrap gap-1 mb-0">
+                        {% if page_obj.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link blog-page-link blog-page-edge" href="{% if page_obj.previous_page_number == 1 %}{% url 'post_list' %}{% else %}{% url 'post_list' %}?page={{ page_obj.previous_page_number }}{% endif %}" aria-label="Previous page">
+                                <span aria-hidden="true">‹</span>
+                            </a>
+                        </li>
+                        {% else %}
+                        <li class="page-item disabled">
+                            <span class="page-link blog-page-link blog-page-edge" aria-disabled="true"><span aria-hidden="true">‹</span></span>
+                        </li>
+                        {% endif %}
+
+                        {% for num in elided_page_range %}
+                            {% if num == page_obj.paginator.ELLIPSIS %}
+                        <li class="page-item disabled">
+                            <span class="page-link blog-page-link blog-page-ellipsis">…</span>
+                        </li>
+                            {% else %}
+                        <li class="page-item{% if num == page_obj.number %} active{% endif %}">
+                            {% if num == page_obj.number %}
+                            <span class="page-link blog-page-link" aria-current="page">{{ num }}</span>
+                            {% elif num == 1 %}
+                            <a class="page-link blog-page-link" href="{% url 'post_list' %}">{{ num }}</a>
+                            {% else %}
+                            <a class="page-link blog-page-link" href="{% url 'post_list' %}?page={{ num }}">{{ num }}</a>
+                            {% endif %}
+                        </li>
+                            {% endif %}
+                        {% endfor %}
+
+                        {% if page_obj.has_next %}
+                        <li class="page-item">
+                            <a class="page-link blog-page-link blog-page-edge" href="{% url 'post_list' %}?page={{ page_obj.next_page_number }}" aria-label="Next page">
+                                <span aria-hidden="true">›</span>
+                            </a>
+                        </li>
+                        {% else %}
+                        <li class="page-item disabled">
+                            <span class="page-link blog-page-link blog-page-edge" aria-disabled="true"><span aria-hidden="true">›</span></span>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+                {% endif %}
 
             </div>
         </div>
