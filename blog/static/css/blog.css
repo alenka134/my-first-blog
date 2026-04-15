@@ -202,10 +202,15 @@ details.post {
   align-items: center;
 }
 
-/* title */
-.post h2 {
+/* Post titles — same face/size everywhere; beats Bootstrap h2 + missing font fallback */
+.post .post-title-row h2 {
   margin: 6px 0 0 0;
-  font-family: 'Abril Fatface', serif;
+  padding: 0;
+  font-family: 'Abril Fatface', Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #1f2d3d;
 }
 
 /* button */
