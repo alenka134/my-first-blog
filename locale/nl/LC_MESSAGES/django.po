@@ -49,17 +49,17 @@ msgstr "Talen:"
 msgid "Profile"
 msgstr "Profiel"
 
-msgid "Senior QA Automation Engineer with 7+ years of experience designing and implementing automated testing solutions for web, API, mobile, and desktop applications across SaaS, public sector, healthcare, and industrial domains."
-msgstr "Senior QA Automation Engineer met meer dan 7 jaar ervaring in het ontwerpen en implementeren van testautomatiseringsoplossingen voor web-, API-, mobiele en desktopapplicaties binnen SaaS, publieke sector, gezondheidszorg en industriële domeinen."
+msgid "Senior QA Automation Engineer with 7+ years of experience in test automation for web, API, mobile, and desktop applications across SaaS, public sector, healthcare, and industrial domains."
+msgstr "Senior QA Automation Engineer met meer dan 7 jaar ervaring in testautomatisering voor web-, API-, mobiele en desktopapplicaties binnen SaaS, publieke sector, gezondheidszorg en industriële domeinen."
 
-msgid "Skilled in designing and building test automation frameworks and integrating them into CI/CD pipelines using C#, Java, and JavaScript, with hands-on experience in Selenium, Playwright, Appium, and WinAppDriver."
-msgstr "Ervaren in het ontwerpen en bouwen van testautomatiseringsframeworks en het integreren ervan in CI/CD pipelines met C#, Java en JavaScript, met praktische ervaring in Selenium, Playwright, Appium en WinAppDriver."
+msgid "Design and implementation of test automation frameworks using C#, Java, and JavaScript. Experience with Selenium, Playwright, Appium, and WinAppDriver."
+msgstr "Ontwerp en implementatie van testautomatiseringsframeworks met C#, Java en JavaScript. Ervaring met Selenium, Playwright, Appium en WinAppDriver."
 
-msgid "Experienced in CI/CD integration with Azure DevOps and Jenkins, improving test coverage, reducing execution time, and increasing release reliability. Strong background in API testing, microservices validation, and SQL-based verification."
-msgstr "Ervaren in CI/CD-integratie met Azure DevOps en Jenkins, waarbij testdekking is verbeterd, uitvoeringstijd is verkort en de betrouwbaarheid van releases is verhoogd. Sterke achtergrond in API testing, microservices validatie en SQL-gebaseerde verificatie."
+msgid "Integration of automated tests into CI/CD pipelines using Azure DevOps, with focus on improving test coverage, reducing execution time, and increasing release stability."
+msgstr "Integratie van geautomatiseerde tests in CI/CD-pipelines met Azure DevOps, met focus op het verbeteren van testdekking, verkorting van uitvoeringstijd en verhoging van release-stabiliteit."
 
-msgid "Focused on improving software quality, test processes, and automation strategy within Agile environments, delivering stable and maintainable solutions."
-msgstr "Gefocust op het verbeteren van softwarekwaliteit, testprocessen en automatiseringsstrategie binnen Agile omgevingen, met stabiele en onderhoudbare oplossingen."
+msgid "Experience in API testing, microservices validation, and SQL-based verification within Agile development environments. Focus on maintainable automation solutions and improving QA processes through test automation."
+msgstr "Ervaring met API testing, microservices-validatie en SQL-gebaseerde verificatie binnen Agile ontwikkelomgevingen. Focus op onderhoudbare automatiseringsoplossingen en het verbeteren van QA-processen via testautomatisering."
 
 msgid "Experience"
 msgstr "Ervaring"
@@ -70,23 +70,26 @@ msgstr "Freelancer – Ontwikkelaar van educatieve tools"
 msgid "Expat Language Labs, Netherlands — 2024–Present"
 msgstr "Expat Language Labs, Nederland — 2024–heden"
 
-msgid "Designed and developed a web-based educational game using JavaScript"
-msgstr "Ontworpen en ontwikkeld: een webgebaseerd educatief spel met JavaScript"
+msgid "Developed and deployed a JavaScript-based educational web application with interactive language-learning gameplay"
+msgstr "Een op JavaScript gebaseerde educatieve webapplicatie met interactieve taalleer-gameplay ontwikkeld en uitgerold"
 
-msgid "Designed and implemented a Playwright-based end-to-end test automation framework"
-msgstr "Ontworpen en geïmplementeerd: Playwright-gebaseerd end-to-end testautomatiseringsframework"
+msgid "Built and maintained a Playwright end-to-end automation framework, improving test coverage and reducing manual QA effort"
+msgstr "Een Playwright end-to-end automatiseringsframework gebouwd en onderhouden, met verbeterde testdekking en minder handmatige QA-inspanning"
 
-msgid "Improved test coverage and reduced manual testing effort through automation"
-msgstr "Testdekking verbeterd en handmatig testen verminderd door automatisering"
+msgid "Collaborated with stakeholders to enhance usability, product quality, and user experience"
+msgstr "Samengewerkt met stakeholders om gebruiksvriendelijkheid, productkwaliteit en gebruikerservaring te verbeteren"
 
-msgid "Collaborated with stakeholders to improve product quality and usability"
-msgstr "Samengewerkt met stakeholders om productkwaliteit en gebruiksvriendelijkheid te verbeteren"
+msgid "Live Application:"
+msgstr "Live applicatie:"
 
-msgid "Designed, developed, and deployed a live web application:"
-msgstr "Ontworpen, ontwikkeld en uitgerold: een live webapplicatie:"
+msgid "Dutch-English Phrase Game"
+msgstr "Nederlands-Engels zinspel"
 
-msgid "Project Demo"
-msgstr "Project demo"
+msgid "Automation Framework Demo:"
+msgstr "Demo automatiseringsframework:"
+
+msgid "Dutch-English-Game-Automation"
+msgstr "Dutch-English-Game-Automation"
 
 msgid "QA Automation Developer & Team Lead"
 msgstr "QA Automation Developer & Teamleider"
