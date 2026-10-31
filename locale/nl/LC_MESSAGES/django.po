@@ -1,152 +1,230 @@
-# Dutch translations for CV
-
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-04-02 23:10+0200\n"
-"PO-Revision-Date: 2026-04-02 23:10+0200\n"
-"Last-Translator: Your Name\n"
-"Language-Team: Dutch\n"
 "Language: nl\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Senior QA Automation Engineer"
+msgstr "Senior QA Automation Engineer"
+
+msgid "Core Skills"
+msgstr "Kernvaardigheden"
+
+msgid "Test Automation"
+msgstr "Testautomatisering"
+
+msgid "Playwright, Selenium WebDriver, NUnit, TestNG, Appium, WinAppDriver; E2E, regression and cross-browser testing."
+msgstr "Playwright, Selenium WebDriver, NUnit, TestNG, Appium, WinAppDriver; end-to-end-, regressie- en cross-browsertests."
+
+msgid "API & Data Testing"
+msgstr "API- en datatests"
+
+msgid "REST API testing, Postman, REST Assured, Python pytest/requests, integration testing, SQL validation."
+msgstr "REST API-testen, Postman, REST Assured, Python met pytest/requests, integratietests en SQL-validatie."
+
+msgid "Programming"
+msgstr "Programmeren"
+
+msgid "C#, Java, JavaScript/TypeScript, SQL; basic Python; Next.js and Tailwind CSS."
+msgstr "C#, Java, JavaScript/TypeScript en SQL; basiskennis van Python; Next.js en Tailwind CSS."
+
+msgid "CI/CD & Tools"
+msgstr "CI/CD en tools"
+
+msgid "Azure DevOps, Azure Pipelines, GitHub Actions, Jenkins, Git, YAML, basic Docker."
+msgstr "Azure DevOps, Azure Pipelines, GitHub Actions, Jenkins, Git, YAML en basiskennis van Docker."
+
+msgid "QA Practices"
+msgstr "QA-methoden"
+
+msgid "Risk-based testing, test strategy, exploratory testing, defect investigation, test documentation, framework design and process improvement."
+msgstr "Risicogebaseerd testen, teststrategie, verkennend testen, defectanalyse, testdocumentatie, ontwerp van testframeworks en procesverbetering."
+
+msgid "AI-Assisted Engineering"
+msgstr "AI-ondersteunde softwareontwikkeling"
+
+msgid "Claude Code, Cursor, GitHub Copilot and ChatGPT for development assistance, debugging and code review, with human validation."
+msgstr "Claude Code, Cursor, GitHub Copilot en ChatGPT voor ontwikkelondersteuning, foutopsporing en codebeoordeling, met menselijke controle van de resultaten."
+
+msgid "Languages"
+msgstr "Talen"
+
+msgid "Dutch (B1 reading & writing, A2+ speaking)"
+msgstr "Nederlands (B1 lezen en schrijven, A2+ spreken)"
+
+msgid "English (fluent)"
+msgstr "Engels (vloeiend)"
+
+msgid "Russian (native)"
+msgstr "Russisch (moedertaal)"
+
+msgid "Hebrew (fluent)"
+msgstr "Hebreeuws (vloeiend)"
+
+msgid "Professional Profile"
+msgstr "Profiel"
+
+msgid "QA Automation Engineer with 7+ years of experience in software quality assurance, including approximately 4 years focused on test automation. Experienced in medical, desktop, web and mobile applications, with a strong background in C#/.NET, Selenium, Playwright, Appium and WinAppDriver."
+msgstr "QA Automation Engineer met meer dan 7 jaar ervaring in softwarekwaliteitsborging, waarvan ongeveer 4 jaar in testautomatisering. Ervaring met medische software en desktop-, web- en mobiele applicaties, en ruime kennis van C#/.NET, Selenium, Playwright, Appium en WinAppDriver."
+
+msgid "Designs and maintains automation frameworks, performs API and integration testing, and integrates automated checks into CI/CD pipelines. Experienced in QA process improvement, technical investigation, mentoring and cross-functional collaboration."
+msgstr "Ontwerpt en onderhoudt testautomatiseringsframeworks, voert API- en integratietests uit en integreert geautomatiseerde controles in CI/CD-pipelines. Ervaring met QA-procesverbetering, technisch onderzoek, begeleiding van collega’s en multidisciplinaire samenwerking."
+
+msgid "Combines commercial QA experience in medical software with hands-on automation projects and AI-assisted software engineering, taking responsibility for reviewing, testing and validating delivered solutions."
+msgstr "Combineert professionele QA-ervaring in medische software met praktijkgerichte automatiseringsprojecten en AI-ondersteunde softwareontwikkeling. Neemt verantwoordelijkheid voor het beoordelen, testen en valideren van opgeleverde oplossingen."
+
+msgid "Professional Experience"
+msgstr "Werkervaring"
+
+msgid "Founder & Product Builder | AI-Assisted Development & QA"
+msgstr "Oprichter en productontwikkelaar | AI-ondersteunde ontwikkeling en QA"
+
+msgid "Elena’s Cat Care, Netherlands | Aug 2026–Present"
+msgstr "Elena’s Cat Care, Nederland | aug. 2026–heden"
+
+msgid "Designed, built, tested and launched a multilingual production website using Next.js, TypeScript and Tailwind CSS."
+msgstr "Een meertalige productiewebsite ontworpen, gebouwd, getest en gelanceerd met Next.js, TypeScript en Tailwind CSS."
+
+msgid "Managed requirements, implementation, validation, deployment and ongoing improvements."
+msgstr "Vereisten, implementatie, validatie, uitrol en doorlopende verbeteringen beheerd."
+
+msgid "Tested booking workflows, pricing rules, discounts and input validation."
+msgstr "Boekingsprocessen, prijsregels, kortingen en invoervalidatie getest."
+
+msgid "Reviewed AI-assisted code, investigated edge cases and maintained the project using Git/GitHub and production deployment workflows."
+msgstr "AI-ondersteunde code beoordeeld, uitzonderingssituaties onderzocht en het project onderhouden met Git/GitHub en procedures voor productie-uitrol."
+
+msgid "Freelance Developer & QA Automation Engineer"
+msgstr "Freelance Developer & QA Automation Engineer"
+
+msgid "Expat Language Labs, Netherlands | 2024–Present"
+msgstr "Expat Language Labs, Nederland | 2024–heden"
+
+msgid "Built an interactive JavaScript-based educational web application and its Playwright end-to-end automation framework."
+msgstr "Een interactieve educatieve webapplicatie in JavaScript ontwikkeld, inclusief een Playwright-framework voor end-to-end-testautomatisering."
+
+msgid "Automated UI testing across Chromium, Firefox and WebKit."
+msgstr "UI-tests geautomatiseerd voor Chromium, Firefox en WebKit."
+
+msgid "Developed API checks using Python, pytest and requests."
+msgstr "API-controles ontwikkeld met Python, pytest en requests."
+
+msgid "Integrated automated tests into GitHub Actions and investigated defects to improve coverage and reliability."
+msgstr "Geautomatiseerde tests geïntegreerd in GitHub Actions en defecten onderzocht om de testdekking en betrouwbaarheid te verbeteren."
+
+msgid "QA Automation Developer & Team Lead"
+msgstr "QA Automation Developer & Team Lead"
+
+msgid "MES LTD, Israel | 2023–2024"
+msgstr "MES LTD, Israël | 2023–2024"
+
+msgid "Increased automated test coverage by 62% and reduced test execution time by 30% through framework improvements."
+msgstr "De dekking van geautomatiseerde tests met 62% verhoogd en de testuitvoeringstijd met 30% verkort dankzij verbeteringen aan het testframework."
+
+msgid "Integrated automated testing into Azure DevOps CI/CD pipelines."
+msgstr "Geautomatiseerde tests geïntegreerd in Azure DevOps CI/CD-pipelines."
+
+msgid "Improved QA processes, test documentation and collaboration."
+msgstr "QA-processen, testdocumentatie en samenwerking verbeterd."
+
+msgid "Coordinated automation activities and mentored QA colleagues."
+msgstr "Automatiseringsactiviteiten gecoördineerd en QA-collega’s begeleid."
 
 msgid "QA Automation Engineer"
 msgstr "QA Automation Engineer"
 
-msgid "Web, API, Mobile & Desktop | Test Automation (Selenium, Playwright, Appium) | CI/CD Integration & Quality Engineering"
-msgstr "Web, API, Mobile & Desktop | Testautomatisering (Selenium, Playwright, Appium) | CI/CD-integratie & Quality Engineering"
+msgid "MES LTD, Israel | 2021–2023"
+msgstr "MES LTD, Israël | 2021–2023"
 
-msgid "Skills"
-msgstr "Vaardigheden"
+msgid "Designed and maintained automation frameworks using C# and Java for Windows applications."
+msgstr "Testautomatiseringsframeworks met C# en Java voor Windows-applicaties ontworpen en onderhouden."
 
-msgid "Test Automation & Frameworks:"
-msgstr "Testautomatisering & Frameworks:"
+msgid "Automated regression testing to support more efficient release cycles."
+msgstr "Regressietests geautomatiseerd om releaseprocessen efficiënter te maken."
 
-msgid "Programming & Scripting:"
-msgstr "Programmeren & Scripting:"
+msgid "Performed API and integration testing and SQL-based data validation."
+msgstr "API- en integratietests uitgevoerd en gegevens gevalideerd met SQL."
 
-msgid "API & Backend Testing:"
-msgstr "API & Backend Testing:"
+msgid "QA Engineer — Manual & Automation"
+msgstr "QA Engineer — Manual & Automation"
 
-msgid "CI/CD & Version Control:"
-msgstr "CI/CD & Versiebeheer:"
+msgid "MES LTD, Israel | 2017–2021"
+msgstr "MES LTD, Israël | 2017–2021"
 
-msgid "Testing & QA:"
-msgstr "Testen & QA:"
+msgid "Performed functional, regression, integration and exploratory testing of medical desktop and web applications."
+msgstr "Functionele, regressie-, integratie- en exploratieve tests uitgevoerd voor medische desktop- en webapplicaties."
 
-msgid "Web & Desktop:"
-msgstr "Web & Desktop:"
+msgid "Contributed to a reported 98% defect detection rate in critical medical applications."
+msgstr "Bijgedragen aan een gerapporteerd defectdetectiepercentage van 98% in kritieke medische applicaties."
 
-msgid "Tools & Technologies:"
-msgstr "Tools & Technologieën:"
-
-msgid "Languages:"
-msgstr "Talen:"
-
-msgid "Profile"
-msgstr "Profiel"
-
-msgid "Senior QA Automation Engineer with 7+ years of experience in test automation for web, API, mobile, and desktop applications across SaaS, public sector, healthcare, and industrial domains."
-msgstr "Senior QA Automation Engineer met meer dan 7 jaar ervaring in testautomatisering voor web-, API-, mobiele en desktopapplicaties binnen SaaS, publieke sector, gezondheidszorg en industriële domeinen."
-
-msgid "Design and implementation of test automation frameworks using C#, Java, and JavaScript. Experience with Selenium, Playwright, Appium, and WinAppDriver."
-msgstr "Ontwerp en implementatie van testautomatiseringsframeworks met C#, Java en JavaScript. Ervaring met Selenium, Playwright, Appium en WinAppDriver."
-
-msgid "Integration of automated tests into CI/CD pipelines using Azure DevOps, with focus on improving test coverage, reducing execution time, and increasing release stability."
-msgstr "Integratie van geautomatiseerde tests in CI/CD-pipelines met Azure DevOps, met focus op het verbeteren van testdekking, verkorting van uitvoeringstijd en verhoging van release-stabiliteit."
-
-msgid "Experience in API testing, microservices validation, and SQL-based verification within Agile development environments. Focus on maintainable automation solutions and improving QA processes through test automation."
-msgstr "Ervaring met API testing, microservices-validatie en SQL-gebaseerde verificatie binnen Agile ontwikkelomgevingen. Focus op onderhoudbare automatiseringsoplossingen en het verbeteren van QA-processen via testautomatisering."
-
-msgid "Experience"
-msgstr "Ervaring"
-
-msgid "Freelancer – Educational Tools Creator"
-msgstr "Freelancer – Ontwikkelaar van educatieve tools"
-
-msgid "Expat Language Labs, Netherlands — 2024–Present"
-msgstr "Expat Language Labs, Nederland — 2024–heden"
-
-msgid "Developed and deployed a JavaScript-based educational web application with interactive language-learning gameplay"
-msgstr "Een op JavaScript gebaseerde educatieve webapplicatie met interactieve taalleer-gameplay ontwikkeld en uitgerold"
-
-msgid "Built and maintained a Playwright end-to-end automation framework, improving test coverage and reducing manual QA effort"
-msgstr "Een Playwright end-to-end automatiseringsframework gebouwd en onderhouden, met verbeterde testdekking en minder handmatige QA-inspanning"
-
-msgid "Collaborated with stakeholders to enhance usability, product quality, and user experience"
-msgstr "Samengewerkt met stakeholders om gebruiksvriendelijkheid, productkwaliteit en gebruikerservaring te verbeteren"
-
-msgid "Live Application:"
-msgstr "Live applicatie:"
-
-msgid "Dutch-English Phrase Game"
-msgstr "Nederlands-Engels zinspel"
-
-msgid "Automation Framework Demo:"
-msgstr "Demo automatiseringsframework:"
-
-msgid "Dutch-English-Game-Automation"
-msgstr "Dutch-English-Game-Automation"
-
-msgid "QA Automation Developer & Team Lead"
-msgstr "QA Automation Developer & Teamleider"
-
-msgid "MES LTD, Israel — 2023–2024"
-msgstr "MES LTD, Israël — 2023–2024"
-
-msgid "Increased test coverage by 62%% and reduced test execution time by 30%%"
-msgstr "Testdekking verhoogd met 62%% en testuitvoeringstijd verminderd met 30%%"
-
-msgid "Led CI/CD integration using Azure DevOps"
-msgstr "CI/CD-integratie geleid met Azure DevOps"
-
-msgid "Defined and improved QA processes and internal documentation"
-msgstr "QA-processen en interne documentatie gedefinieerd en verbeterd"
-
-msgid "Coordinated automation efforts and supported team members"
-msgstr "Automatiseringsinspanningen gecoördineerd en teamleden ondersteund"
-
-msgid "MES LTD, Israel — 2021–2023"
-msgstr "MES LTD, Israël — 2021–2023"
-
-msgid "Built and maintained automation frameworks using C# and Java"
-msgstr "Automatiseringsframeworks gebouwd en onderhouden met C# en Java"
-
-msgid "Automated regression testing and improved release cycles"
-msgstr "Regressietesten geautomatiseerd en releasecycli verbeterd"
-
-msgid "Performed API testing and SQL-based validation"
-msgstr "API testing en SQL-gebaseerde validatie uitgevoerd"
-
-msgid "QA Engineer – Manual & Automation"
-msgstr "QA Engineer – Handmatig & Automatisering"
-
-msgid "MES LTD, Israel — 2017–2021"
-msgstr "MES LTD, Israël — 2017–2021"
-
-msgid "Performed manual and automated testing for desktop and web applications"
-msgstr "Handmatig en geautomatiseerd testen uitgevoerd voor desktop- en webapplicaties"
-
-msgid "Achieved 98%% defect detection rate in critical medical applications"
-msgstr "98%% defectdetectie behaald in kritische medische applicaties"
-
-msgid "Reduced regression testing time by 50%%"
-msgstr "Regressietesttijd met 50%% verminderd"
+msgid "Reduced regression testing time by 50% through automation and process improvements."
+msgstr "De tijd voor regressietests met 50% verkort dankzij automatisering en procesverbeteringen."
 
 msgid "Research Associate & Lab Manager"
-msgstr "Onderzoeker & Lab Manager"
+msgstr "Research Associate & Lab Manager"
 
-msgid "Technion – Israel Institute of Technology — 2010–2017"
-msgstr "Technion – Israel Institute of Technology — 2010–2017"
+msgid "Technion — Israel Institute of Technology | 2010–2017"
+msgstr "Technion — Israel Institute of Technology | 2010–2017"
 
-msgid "Designed experimental protocols and validated scientific results"
-msgstr "Experimentele protocollen ontworpen en wetenschappelijke resultaten gevalideerd"
+msgid "Developed experimental protocols and validated scientific results."
+msgstr "Experimentele protocollen ontwikkeld en wetenschappelijke resultaten gevalideerd."
 
-msgid "Managed laboratory operations and research processes"
-msgstr "Laboratoriumactiviteiten en onderzoeksprocessen beheerd"
+msgid "Managed laboratory operations, research processes and technical documentation."
+msgstr "Laboratoriumactiviteiten, onderzoeksprocessen en technische documentatie beheerd."
 
-msgid "Education & Certifications"
-msgstr "Opleiding & Certificeringen"
+msgid "Selected Projects"
+msgstr "Geselecteerde projecten"
+
+msgid "Elena’s Cat Care — Production Website"
+msgstr "Elena’s Cat Care — Productiewebsite"
+
+msgid "Multilingual production website built with Next.js and TypeScript, covering booking workflows, pricing logic, validation and AI-assisted engineering."
+msgstr "Meertalige website gebouwd met Next.js en TypeScript, met boekingsprocessen, prijslogica, invoervalidatie en AI-ondersteunde softwareontwikkeling."
+
+msgid "Live Website"
+msgstr "Website"
+
+msgid "Expat Language Labs — Playwright & API Automation"
+msgstr "Expat Language Labs — Playwright- en API-testautomatisering"
+
+msgid "Interactive language-learning application with cross-browser Playwright tests, Python API testing and GitHub Actions CI."
+msgstr "Interactieve taalapplicatie met cross-browser Playwright-tests, Python API-tests en CI via GitHub Actions."
+
+msgid "Live Application"
+msgstr "Live applicatie"
+
+msgid "QA Automation Repository"
+msgstr "QA-automatiseringsrepository"
+
+msgid "Django Tech Blog"
+msgstr "Django Tech Blog"
+
+msgid "Personal technical blog and professional CV website built using Python and Django."
+msgstr "Persoonlijke technische blog en professionele CV-website, gebouwd met Python en Django."
+
+msgid "Live Blog"
+msgstr "Blog"
+
+msgid "Source Code"
+msgstr "Broncode"
+
+msgid "Education & Professional Development"
+msgstr "Opleiding en professionele ontwikkeling"
+
+msgid "M.Sc. Biology & Medical Science — Technion, Israel"
+msgstr "M.Sc. Biology & Medical Science — Technion, Israël"
+
+msgid "Automation Certification — Computer College, Israel"
+msgstr "Automation Certification — Computer College, Israël"
+
+msgid "Anthropic — Claude 101 & Claude Code 101 (2026)"
+msgstr "Anthropic — Claude 101 & Claude Code 101 (2026)"
+
+msgid "Managing App Development — Quantic (2025)"
+msgstr "Managing App Development — Quantic (2025)"
+
+msgid "Playwright End-to-End Automation (2024)"
+msgstr "Playwright End-to-End Automation (2024)"
+
+msgid "Appium & WinAppDriver (2022)"
+msgstr "Appium & WinAppDriver (2022)"

@@ -1,192 +1,60 @@
+
 {% extends "blog/base.html" %}
 {% load i18n %}
-
 {% block content %}
-
 <div class="cv-page">
-
-    <!-- HEADER -->
-    <div class="cv-header">
-        <h1>Elena Ovcharenko</h1>
-
-        <p class="cv-contact">
-            📍 Amstelveen, North Holland |
-            📧 <a href="mailto:alenka134@gmail.com">alenka134@gmail.com</a> |
-            📞 <a href="tel:+31685574308">+31 685574308</a> |
-            🔗 <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/alenka134" target="_blank">GitHub</a> |
-            <a href="https://elenao.pythonanywhere.com/" target="_blank">Live Project</a>
-        </p>
-
-        <h2 class="cv-title">
-            {% trans "QA Automation Engineer" %}
-        </h2>
-
-        <p class="cv-subtitle">
-            {% trans "Web, API, Mobile & Desktop | Test Automation (Selenium, Playwright, Appium) | CI/CD Integration & Quality Engineering" %}
-        </p>
-    </div>
-
-    <hr>
-
-    <!-- TWO COLUMN LAYOUT -->
-    <div class="cv-container">
-
-        <!-- LEFT COLUMN -->
-        <aside class="cv-left">
-            <h2>{% trans "Skills" %}</h2>
-
-            <p><strong>{% trans "Test Automation & Frameworks:" %}</strong>
-                Selenium, Playwright, Appium, WinAppDriver, NUnit, TestNG, SpecFlow (BDD)
-            </p>
-
-            <p><strong>{% trans "Programming & Scripting:" %}</strong>
-                C#, Java, JavaScript/TypeScript, Python (basic), SQL
-            </p>
-
-            <p><strong>{% trans "API & Backend Testing:" %}</strong>
-                REST API testing (Postman, REST Assured), microservices validation, API verification
-            </p>
-
-            <p><strong>{% trans "CI/CD & Version Control:" %}</strong>
-                Azure DevOps, Jenkins, GitHub Actions, GitLab CI, Git
-            </p>
-
-            <p><strong>{% trans "Testing & QA:" %}</strong>
-                Functional, Regression, Smoke, Integration, End-to-End, Risk-based testing, Test strategy
-            </p>
-
-            <p><strong>{% trans "Web & Desktop:" %}</strong>
-                Web applications, Desktop applications, SaaS platforms
-            </p>
-
-            <p><strong>{% trans "Tools & Technologies:" %}</strong>
-                SSMS, Maven, NuGet, Docker (basic), Kubernetes (basic)
-            </p>
-
-            <p><strong>{% trans "Languages:" %}</strong>
-                Dutch (B1), English (fluent), Russian (native), Hebrew (fluent)
-            </p>
-
-            <p>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/alenka134" target="_blank">github.com/alenka134</a>
-            </p>
-        </aside>
-
-        <!-- RIGHT COLUMN -->
-        <main class="cv-right">
-
-            <!-- PROFILE -->
-            <section>
-                <h2>{% trans "Profile" %}</h2>
-
-                <p>
-                    {% trans "Senior QA Automation Engineer with 7+ years of experience in test automation for web, API, mobile, and desktop applications across SaaS, public sector, healthcare, and industrial domains." %}
-                </p>
-
-                <p>
-                    {% trans "Design and implementation of test automation frameworks using C#, Java, and JavaScript. Experience with Selenium, Playwright, Appium, and WinAppDriver." %}
-                </p>
-
-                <p>
-                    {% trans "Integration of automated tests into CI/CD pipelines using Azure DevOps, with focus on improving test coverage, reducing execution time, and increasing release stability." %}
-                </p>
-
-                <p>
-                    {% trans "Experience in API testing, microservices validation, and SQL-based verification within Agile development environments. Focus on maintainable automation solutions and improving QA processes through test automation." %}
-                </p>
-            </section>
-
-            <!-- EXPERIENCE -->
-            <section>
-                <h2>{% trans "Experience" %}</h2>
-
-                <div class="cv-job">
-                    <h3>{% trans "Freelancer – Educational Tools Creator" %}</h3>
-                    <p><strong>{% trans "Expat Language Labs, Netherlands — 2024–Present" %}</strong></p>
-                    <ul>
-                        <li>{% trans "Developed and deployed a JavaScript-based educational web application with interactive language-learning gameplay" %}</li>
-
-                        <li>{% trans "Built and maintained a Playwright end-to-end automation framework, improving test coverage and reducing manual QA effort" %}</li>
-
-                        <li>{% trans "Collaborated with stakeholders to enhance usability, product quality, and user experience" %}</li>
-
-                        <li>
-                            {% trans "Live Application:" %}
-                            <a href="https://dutch-english-phrase-game.netlify.app/" target="_blank">
-                                {% trans "Dutch-English Phrase Game" %}
-                            </a>
-                        </li>
-
-                        <li>
-                            {% trans "Automation Framework Demo:" %}
-                            <a href="https://github.com/alenka134/Dutch-English-Game-Automation" target="_blank">
-                                {% trans "Dutch-English-Game-Automation" %}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="cv-job">
-                    <h3>{% trans "QA Automation Developer & Team Lead" %}</h3>
-                    <p><strong>{% trans "MES LTD, Israel — 2023–2024" %}</strong></p>
-                    <ul>
-                        <li>{% trans "Increased test coverage by 62% and reduced test execution time by 30%" %}</li>
-                        <li>{% trans "Led CI/CD integration using Azure DevOps" %}</li>
-                        <li>{% trans "Defined and improved QA processes and internal documentation" %}</li>
-                        <li>{% trans "Coordinated automation efforts and supported team members" %}</li>
-                    </ul>
-                </div>
-
-                <div class="cv-job">
-                    <h3>{% trans "QA Automation Engineer" %}</h3>
-                    <p><strong>{% trans "MES LTD, Israel — 2021–2023" %}</strong></p>
-                    <ul>
-                        <li>{% trans "Built and maintained automation frameworks using C# and Java" %}</li>
-                        <li>{% trans "Automated regression testing and improved release cycles" %}</li>
-                        <li>{% trans "Performed API testing and SQL-based validation" %}</li>
-                    </ul>
-                </div>
-
-                <div class="cv-job">
-                    <h3>{% trans "QA Engineer – Manual & Automation" %}</h3>
-                    <p><strong>{% trans "MES LTD, Israel — 2017–2021" %}</strong></p>
-                    <ul>
-                        <li>{% trans "Performed manual and automated testing for desktop and web applications" %}</li>
-                        <li>{% trans "Achieved 98% defect detection rate in critical medical applications" %}</li>
-                        <li>{% trans "Reduced regression testing time by 50%" %}</li>
-                    </ul>
-                </div>
-
-                <div class="cv-job">
-                    <h3>{% trans "Research Associate & Lab Manager" %}</h3>
-                    <p><strong>{% trans "Technion – Israel Institute of Technology — 2010–2017" %}</strong></p>
-                    <ul>
-                        <li>{% trans "Designed experimental protocols and validated scientific results" %}</li>
-                        <li>{% trans "Managed laboratory operations and research processes" %}</li>
-                    </ul>
-                </div>
-
-            </section>
-
-            <!-- EDUCATION -->
-            <section>
-                <h2>{% trans "Education & Certifications" %}</h2>
-
-                <ul>
-                    <li>M.Sc. Biology & Medical Science – Technion</li>
-                    <li>Certification in Automation – Computer College</li>
-                    <li>Managing App Development – Quantic (2025)</li>
-                    <li>Playwright Automation (2024)</li>
-                    <li>Appium & WinAppDriver (2022)</li>
-                </ul>
-            </section>
-
-        </main>
-
-    </div>
-
+<div class="cv-header">
+<h1>Elena Ovcharenko</h1>
+<p class="cv-contact">📍 Amstelveen, Netherlands | 📧 <a href="mailto:alenka134@gmail.com">alenka134@gmail.com</a> | 📞 <a href="tel:+31685574308">+31 685574308</a> | 🔗 <a href="https://www.linkedin.com/in/elena-ovcharenko-0650b615/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/alenka134" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.92.43.372.814 1.103.814 2.222 0 1.604-.015 2.896-.015 3.286 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"/></svg> GitHub</a> | <a href="https://elenao.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">Tech Blog</a></p>
+<h2 class="cv-title">{% blocktrans %}Senior QA Automation Engineer{% endblocktrans %}</h2>
+<p class="cv-subtitle">C#/.NET · Playwright · Selenium · API Testing · CI/CD</p>
 </div>
-
+<hr>
+<div class="cv-container">
+<aside class="cv-left">
+<h2>{% blocktrans %}Core Skills{% endblocktrans %}</h2>
+<p><strong>{% blocktrans %}Test Automation{% endblocktrans %}:</strong> {% blocktrans %}Playwright, Selenium WebDriver, NUnit, TestNG, Appium, WinAppDriver; E2E, regression and cross-browser testing.{% endblocktrans %}</p>
+<p><strong>{% blocktrans %}API & Data Testing{% endblocktrans %}:</strong> {% blocktrans %}REST API testing, Postman, REST Assured, Python pytest/requests, integration testing, SQL validation.{% endblocktrans %}</p>
+<p><strong>{% blocktrans %}Programming{% endblocktrans %}:</strong> {% blocktrans %}JavaScript/TypeScript, C#, Java,  SQL; basic Python; Next.js and Tailwind CSS.{% endblocktrans %}</p>
+<p><strong>{% blocktrans %}CI/CD & Tools{% endblocktrans %}:</strong> {% blocktrans %}Azure DevOps, Azure Pipelines, GitHub Actions, Jenkins, Git, YAML, basic Docker.{% endblocktrans %}</p>
+<p><strong>{% blocktrans %}QA Practices{% endblocktrans %}:</strong> {% blocktrans %}Risk-based testing, test strategy, exploratory testing, defect investigation, test documentation, framework design and process improvement.{% endblocktrans %}</p>
+<p><strong>{% blocktrans %}AI-Assisted Engineering{% endblocktrans %}:</strong> {% blocktrans %}Claude Code, Cursor, GitHub Copilot and ChatGPT for development assistance, debugging and code review, with human validation.{% endblocktrans %}</p>
+<p><strong>{% blocktrans %}Languages{% endblocktrans %}:</strong> {% blocktrans %}English (fluent){% endblocktrans %} · {% blocktrans %}Dutch (B1 reading & writing, A2+ speaking){% endblocktrans %} · {% blocktrans %}Russian (native){% endblocktrans %} · {% blocktrans %}Hebrew (fluent){% endblocktrans %}</p>
+</aside>
+<main class="cv-right">
+<section>
+<h2>{% blocktrans %}Professional Profile{% endblocktrans %}</h2>
+<p>{% blocktrans %}QA Automation Engineer with 7+ years of experience in software quality assurance, including approximately 4 years focused on test automation. Experienced in medical, desktop, web and mobile applications, with a strong background in C#/.NET, Selenium, Playwright, Appium and WinAppDriver.{% endblocktrans %}</p>
+<p>{% blocktrans %}Designs and maintains automation frameworks, performs API and integration testing, and integrates automated checks into CI/CD pipelines. Experienced in QA process improvement, technical investigation, mentoring and cross-functional collaboration.{% endblocktrans %}</p>
+<p>{% blocktrans %}Combines commercial QA experience in medical software with hands-on automation projects and AI-assisted software engineering, taking responsibility for reviewing, testing and validating delivered solutions.{% endblocktrans %}</p>
+</section>
+<section>
+<h2>{% blocktrans %}Professional Experience{% endblocktrans %}</h2>
+<div class="cv-job"><h3>{% blocktrans %}Founder & Product Builder | AI-Assisted Development & QA{% endblocktrans %}</h3><p><strong>{% blocktrans %}Elena’s Cat Care, Netherlands | Aug 2026–Present{% endblocktrans %}</strong></p><ul><li>{% blocktrans %}Designed, built, tested and launched a multilingual production website using Next.js, TypeScript and Tailwind CSS.{% endblocktrans %}</li><li>{% blocktrans %}Managed requirements, implementation, validation, deployment and ongoing improvements.{% endblocktrans %}</li><li>{% blocktrans %}Tested booking workflows, pricing rules, discounts and input validation.{% endblocktrans %}</li><li>{% blocktrans %}Reviewed AI-assisted code, investigated edge cases and maintained the project using Git/GitHub and production deployment workflows.{% endblocktrans %}</li></ul></div>
+<div class="cv-job"><h3>{% blocktrans %}Freelance Developer & QA Automation Engineer{% endblocktrans %}</h3><p><strong>{% blocktrans %}Expat Language Labs, Netherlands | 2024–Present{% endblocktrans %}</strong></p><ul><li>{% blocktrans %}Built an interactive JavaScript-based educational web application and its Playwright end-to-end automation framework.{% endblocktrans %}</li><li>{% blocktrans %}Automated UI testing across Chromium, Firefox and WebKit.{% endblocktrans %}</li><li>{% blocktrans %}Developed API checks using Python, pytest and requests.{% endblocktrans %}</li><li>{% blocktrans %}Integrated automated tests into GitHub Actions and investigated defects to improve coverage and reliability.{% endblocktrans %}</li></ul></div>
+<div class="cv-job"><h3>{% blocktrans %}QA Automation Developer & Team Lead{% endblocktrans %}</h3><p><strong>{% blocktrans %}MES LTD, Israel | 2023–2024{% endblocktrans %}</strong></p><ul><li>{% blocktrans %}Increased automated test coverage by 62% and reduced test execution time by 30% through framework improvements.{% endblocktrans %}</li><li>{% blocktrans %}Integrated automated testing into Azure DevOps CI/CD pipelines.{% endblocktrans %}</li><li>{% blocktrans %}Improved QA processes, test documentation and collaboration.{% endblocktrans %}</li><li>{% blocktrans %}Coordinated automation activities and mentored QA colleagues.{% endblocktrans %}</li></ul></div>
+<div class="cv-job"><h3>{% blocktrans %}QA Automation Engineer{% endblocktrans %}</h3><p><strong>{% blocktrans %}MES LTD, Israel | 2021–2023{% endblocktrans %}</strong></p><ul><li>{% blocktrans %}Designed and maintained automation frameworks using C# and Java for Windows applications.{% endblocktrans %}</li><li>{% blocktrans %}Automated regression testing to support more efficient release cycles.{% endblocktrans %}</li><li>{% blocktrans %}Performed API and integration testing and SQL-based data validation.{% endblocktrans %}</li></ul></div>
+<div class="cv-job"><h3>{% blocktrans %}QA Engineer — Manual & Automation{% endblocktrans %}</h3><p><strong>{% blocktrans %}MES LTD, Israel | 2017–2021{% endblocktrans %}</strong></p><ul><li>{% blocktrans %}Performed functional, regression, integration and exploratory testing of medical desktop and web applications.{% endblocktrans %}</li><li>{% blocktrans %}Contributed to a reported 98% defect detection rate in critical medical applications.{% endblocktrans %}</li><li>{% blocktrans %}Reduced regression testing time by 50% through automation and process improvements.{% endblocktrans %}</li></ul></div>
+<div class="cv-job"><h3>{% blocktrans %}Research Associate & Lab Manager{% endblocktrans %}</h3><p><strong>{% blocktrans %}Technion — Israel Institute of Technology | 2010–2017{% endblocktrans %}</strong></p><ul><li>{% blocktrans %}Developed experimental protocols and validated scientific results.{% endblocktrans %}</li><li>{% blocktrans %}Managed laboratory operations, research processes and technical documentation.{% endblocktrans %}</li></ul></div>
+</section>
+<section>
+<h2>{% blocktrans %}Selected Projects{% endblocktrans %}</h2>
+<div class="cv-job"><h3>{% blocktrans %}Elena’s Cat Care — Production Website{% endblocktrans %}</h3><p>{% blocktrans %}Multilingual production website built with Next.js and TypeScript, covering booking workflows, pricing logic, validation and AI-assisted engineering.{% endblocktrans %}</p><p><a href="https://elenascatcare.nl/" target="_blank" rel="noopener noreferrer">{% blocktrans %}Live Website{% endblocktrans %}</a></p></div>
+<div class="cv-job"><h3>{% blocktrans %}Expat Language Labs — Playwright & API Automation{% endblocktrans %}</h3><p>{% blocktrans %}Interactive language-learning application with cross-browser Playwright tests, Python API testing and GitHub Actions CI.{% endblocktrans %}</p><p><a href="https://dutch-english-phrase-game.netlify.app/" target="_blank" rel="noopener noreferrer">{% blocktrans %}Live Application{% endblocktrans %}</a> | <a href="https://github.com/alenka134/Dutch-English-Game-Automation" target="_blank" rel="noopener noreferrer">{% blocktrans %}QA Automation Repository{% endblocktrans %}</a></p></div>
+<div class="cv-job"><h3>{% blocktrans %}Django Tech Blog{% endblocktrans %}</h3><p>{% blocktrans %}Personal technical blog and professional CV website built using Python and Django.{% endblocktrans %}</p><p><a href="https://elenao.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">{% blocktrans %}Live Blog{% endblocktrans %}</a> | <a href="https://github.com/alenka134/my-first-blog" target="_blank" rel="noopener noreferrer">{% blocktrans %}Source Code{% endblocktrans %}</a></p></div>
+</section>
+<section>
+<h2>{% blocktrans %}Education & Professional Development{% endblocktrans %}</h2>
+<ul>
+<li>{% blocktrans %}M.Sc. Biology & Medical Science — Technion, Israel{% endblocktrans %}</li>
+<li>{% blocktrans %}Automation Certification — Computer College, Israel{% endblocktrans %}</li>
+<li>{% blocktrans %}Anthropic — Claude 101 & Claude Code 101 (2026){% endblocktrans %}</li>
+<li>{% blocktrans %}Managing App Development — Quantic (2025){% endblocktrans %}</li>
+<li>{% blocktrans %}Playwright End-to-End Automation (2024){% endblocktrans %}</li>
+<li>{% blocktrans %}Appium & WinAppDriver (2022){% endblocktrans %}</li>
+</ul>
+</section>
+</main>
+</div>
+</div>
 {% endblock %}
